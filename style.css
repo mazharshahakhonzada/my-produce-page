@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background:#eeeeee;
+    --background-secondry:#dddddd;
+    --box-shadow:#bbbbbb;
+    --hover:#ffa500;
+    --button:#f1c40f;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--background);
+    font-family: sans-serif;
+}
+#header #nav-bar{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 4px var(--box-shadow);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--background);
+}
+#header #nav-bar img{
+    width: 410px;
+    margin-left: 50px;
+}
+#header #nav-bar ul{
+    list-style: none;
+    display:flex;
+    margin-right: 0px;
+}
+#header #nav-bar ul li a{
+    text-decoration: none;
+    margin-right: 80px;
+    color: #000;
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+}
+#header #nav-bar ul li a:hover{
+    color: var(--hover);
+    transition: 00.5s;
+}
+.hero{
+    margin: 150px auto 30px auto;
+
+}
+.hero h1{
+    text-align: center;
+    font-size: 1.5em;
+}
+.hero #form{
+    width: 100%;
+    text-align: center;
+}
+.hero #form #email{
+    margin:30px 0 20px 0;
+    width: 270px;
+    padding: 5px;
+}
+.hero #form #submit{
+    width: 130px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    color: #000;
+    background-color: var(--button);
+    font-weight: 900;
+    transition: 00.5s;
+    cursor: pointer;
+}
+.hero #form #submit:hover{
+    color: #eeeeee;
+    transition: 0.5s;
+}
+#features {
+    margin-top: 110px;
+    margin-bottom: 240px;
+}
+#features .features-item{
+    width: 60%;
+    margin: 60px auto;
+    line-height: 1.2em;
+}
+#features .features-item h2{
+    margin-bottom: 7px;
+}
+#video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pricing{
+    margin: 100px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#pricing .pricing-element{
+    width: 100%;
+    height: 340px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 15px ;
+    outline: none;
+    text-align: center;
+}
+#pricing .pricing-element h1{
+    text-align: center;
+    background-color: var(--background-secondry);
+    padding: 10px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+#pricing .pricing-element p{
+    line-height: 35px;
+}
+#pricing .pricing-element button{
+    margin-top: 20px;
+    width: 100px;
+    height: 25px;
+    border: none;
+    color: #fff;
+    background-color: var(--button);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#pricing .pricing-element button:hover{
+    background-color: var(--hover);
+    transition: 0.5s;
+    color:#fff;
+}
+footer{
+    width: 80%;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #dddddd;
+    transition: 1s;
+}
+
+footer ul{
+    display: flex;
+    align-self: flex-end;
+    margin: 25px 20px 10px 0;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+footer ul li a:hover{
+    color: #ffa500;
+    transition: 0.5s;
+}
+
+footer:hover{
+    transition: 1s;
+    background-color: #333;
+}
+
+footer:hover p{
+    color: #fff;
+}
+
+footer p{
+    color: #333;
+    align-self: flex-end;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width:768px) {
+    #header{
+        margin-top: 150px;
+    }
+
+    #nav-bar img{
+        display: none;
+    }
+    #header #nav-bar{
+        height: 100px;
+    }
+    #nav-bar ul li .nav-links{
+        margin-right: 50px;
+    }
+
+    #pricing{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pricing .pricing-element{
+        margin: 20px  80px;
+    }
+
+    form #email{
+        width: 300px;
+    }
+}
